@@ -1,15 +1,15 @@
-package org.aniu.controller;
+package org.neo.home.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @program: springmvc01
  * @author: neo
- * @create: 2024-11-08 14:11
+ * @create: 2024-11-07 22:19
  **/
-@RestController
-public class RestControllerTest {
+@Controller
+public class HomeController {
     @RequestMapping("/")
     public String index(){
         return "index";
