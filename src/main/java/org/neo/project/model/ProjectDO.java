@@ -15,11 +15,10 @@ public class ProjectDO {
     private String projectName;     // 项目名称
     private String projectDesc;     // 项目描述
     private String createTime;      // 创建时间
-    private String createUser;      // 创建用户
+    private String createUserId;      // 创建用户
     private String modifyTime;      // 修改时间
-    private String modifyUser;      // 修改用户
+    private String modifyUserId;      // 修改用户
 
-    // Getter 和 Setter 方法
     public Long getProjectId() {
         return projectId;
     }
@@ -52,12 +51,12 @@ public class ProjectDO {
         this.createTime = createTime;
     }
 
-    public String getCreateUser() {
-        return createUser;
+    public String getCreateUserId() {
+        return createUserId;
     }
 
-    public void setCreateUser(String createUser) {
-        this.createUser = createUser;
+    public void setCreateUserId(String createUserId) {
+        this.createUserId = createUserId;
     }
 
     public String getModifyTime() {
@@ -68,24 +67,11 @@ public class ProjectDO {
         this.modifyTime = modifyTime;
     }
 
-    public String getModifyUser() {
-        return modifyUser;
+    public String getModifyUserId() {
+        return modifyUserId;
     }
 
-    public void setModifyUser(String modifyUser) {
-        this.modifyUser = modifyUser;
-    }
-
-    @Override
-    public String toString() {
-        return "ProjectDO{" +
-                "projectId=" + projectId +
-                ", projectName='" + projectName + '\'' +
-                ", projectDesc='" + projectDesc + '\'' +
-                ", createTime='" + createTime + '\'' +
-                ", createUser='" + createUser + '\'' +
-                ", modifyTime='" + modifyTime + '\'' +
-                ", modifyUser='" + modifyUser + '\'' +
-                '}';
+    public void setModifyUserId(String modifyUserId) {
+        this.modifyUserId = modifyUserId;
     }
 }

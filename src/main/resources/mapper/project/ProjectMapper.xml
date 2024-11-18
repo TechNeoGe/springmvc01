@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="org.neo.project.dao.ProjectDao">
+<mapper namespace="org.neo.project.dao.ProjectDAO">
     <resultMap id="userResultMap"
                type="org.neo.project.model.ProjectDO">
         <id property="projectId" column="project_id" />

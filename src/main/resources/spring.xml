@@ -15,5 +15,5 @@
     <!-- if you want to only load a single spring configuration file, you could import all other files here. -->
     <import resource="spring-mvc.xml" />
     <import resource="spring-mybatis.xml" />
-    <import resource="spring-tx.xml" />
+<!--    <import resource="spring-tx.xml" />-->
 </beans>

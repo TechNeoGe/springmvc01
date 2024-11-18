@@ -2,7 +2,6 @@ package org.neo.project.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.neo.project.model.ProjectDO;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -12,7 +11,7 @@ import java.util.List;
  * @create: 2024-11-16 19:23
  **/
 @Mapper
-public interface ProjectDao {
+public interface ProjectDAO {
     List<ProjectDO> listAllProjects();
 
     ProjectDO getProjectById(Integer projectId);

@@ -1,6 +1,6 @@
 package org.neo.project.service.impl;
 
-import org.neo.project.dao.ProjectDao;
+import org.neo.project.dao.ProjectDAO;
 import org.neo.project.model.ProjectDO;
 import org.neo.project.service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,24 +16,24 @@ import java.util.List;
 @Service
 public class ProjectServiceImpl implements ProjectService {
 
-//    @Autowired
-//    private ProjectDao projectDao;
+    @Autowired
+    private ProjectDAO projectDAO;
 
     @Override
     public List<ProjectDO> listAllProjects() {
-//        return projectDao.listAllProjects();
-        return null;
+        return projectDAO.listAllProjects();
+//        return null;
     }
 
     @Override
     public ProjectDO getProjectById(Integer projectId) {
-//        return projectDao.getProjectById(projectId);
+//        return projectDAO.getProjectById(projectId);
         return null;
     }
 
     @Override
     public void saveProject(ProjectDO projectDO) {
-//        projectDao.saveProject(projectDO);
+//        projectDAO.saveProject(projectDO);
     }
 
     @Override
